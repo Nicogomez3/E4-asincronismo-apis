@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>E4 POKEAPI</title>
+</head>
+<body>
+    <section class="title">  
+        <img class="title--img--reverse" src="./assets/img/pokebola.png" alt="">    
+        <a href="https://fontmeme.com/fuentes/fuente-pokemon/"><img src="https://fontmeme.com/permalink/240519/f58a461aba7af33156d84d5700e8cd5f.png" alt="fuente-pokemon" border="0"></a>
+        <img class="title--img" src="./assets/img/pokebola.png" alt="">
+    </section>
+
+
+    <section class="form--input">
+        <form id="poke--form" action="" onsubmit="searchPokemon(event)">
+            
+            <input type="number" id="inputNumber" name="pokemon" placeholder="Busca tu pokemon..."
+            >
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <p class="message"></p>
+        </form>
+    </section>
+
+    <section class="main">
+        <div class="pokedex--container">
+     
+
+    </section>
+    <footer class="footer--transparent">
+        <p>  &copy; Pokedex by Nicolas Gomez </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

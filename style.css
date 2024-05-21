@@ -1,0 +1,209 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001d3d;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.title--img {
+    width: 60px;
+}
+.title--img--reverse {
+    width: 60px;
+    transform: scaleX(-1);
+}
+
+.form--input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form--input input {
+    border-radius: 12px;
+    padding: 8px 15px;
+    border: 3px solid #0466c8;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form--input input:focus {
+    border-color: #ffbd00;
+    box-shadow: 0 0 10px #ffbd00;
+}
+
+.form--input input::placeholder {
+    color: white;
+}
+
+button {
+    background-color: #ffbd00;
+    border: none;
+    padding: 8px 15px;
+    /* width: 45px; */
+    font-size: 18px;
+    border-radius: 8px;
+    color: #ffbd00;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ffbd00;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button i {
+    color: #001d3d;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* font-family: 'Pokemon Solid', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-weight: 100; */
+    /* letter-spacing: 1.8px; */
+    background-color: rgba(0, 0, 240, 0.2);
+    /* border: dashed 6px #0466c8; */
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 7px 7px 2px 0px #0466c8 ;
+    margin-bottom: 60px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 7px 10px 0px #0466c8;
+}
+
+.img--notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img--notfound img {
+    width: 170px;
+
+}
+
+.bg-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title--img, .title--img--reverse {
+    transition: transform 0.5s ease;
+}
+
+.title--img:hover, .title--img--reverse:hover {
+    transform: rotate(360deg);
+}
+
+
+.card img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+/* .card img {
+    border-radius: 50%;
+} */
+
+.card--name {
+    margin-top: 20px;
+    background-color: #001d3d;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card--name:hover {
+    box-shadow: 1px 2px 10px 4px #0466c8;
+    background-color: #0466c8;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
+    gap: 3px;
+  }
+
+
+  .info-container p {
+    margin: 4px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .info-container p:hover {
+    background-color: #0466c8;
+    color: #fff;
+}
+
+
+.message {
+    color:rgb(241, 59, 59);
+    font-family: 'Pokemon Solid', sans-serif;
+    font-weight: 200;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
+
+
+.footer--transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    margin-top: 40px;
+    /* text-align: center; */
+}
